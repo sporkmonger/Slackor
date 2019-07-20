@@ -26,6 +26,8 @@ import (
 	"github.com/mattn/go-shellwords"
 )
 
+//go:generate statik --src=embed/ --dest=internal/
+
 // processedJobIDs tracks all job IDs previously processed by the implant
 var processedJobIDs = []string{}
 
